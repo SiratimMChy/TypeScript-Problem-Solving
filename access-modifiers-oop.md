@@ -6,7 +6,7 @@ In TypeScript OOP, access modifiers control property and method visibility, enfo
 
 TypeScript provides four main access modifiers:
 
-1. **`public` (Default):** Accessible from anywhere—inside the class, child classes, and on external instances.
+1. **`public` (Default):** Accessible from anywhere inside the class, child classes, and on external instances.
 2. **`private`:** Accessible strictly inside the declaring class. Subclasses and external objects cannot read or modify them directly.
 3. **`protected`:** Accessible inside the declaring class and its child classes, but hidden from external instances.
 4. **`readonly`:** Prevents reassignment after initialization. A property can only be set during declaration or inside the constructor.
