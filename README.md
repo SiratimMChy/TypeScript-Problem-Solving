@@ -5,15 +5,15 @@ This repository contains solutions to 8 core TypeScript problems along with two 
 ## Project Structure
 
 ```
-├── solutions.ts             # All problem solutions
-├── type-vs-interface.md     # Blog 1: Type Aliases vs Interfaces
-├── access-modifiers-oop.md  # Blog 2: Access Modifiers in OOP
+├── solutions.ts             
+├── type-vs-interface.md     
+├── access-modifiers-oop.md 
 └── README.md
 ```
 
 ## What's Inside
 
-All coding problems are solved inside [`solutions.ts`](./solutions.ts) using strict typing (no `any` used):
+All solutions are written in [`solutions.ts`](./solutions.ts) with strict types and zero use of `any`:
 
 - **Basic Types & Functions**: Working with optional parameters and default fallbacks while handling numeric edge cases like `0`.
 - **Type Narrowing**: Handling union types (`string | number | boolean`) safely using `typeof` guards.
