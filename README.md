@@ -1,6 +1,6 @@
 # TypeScript Problem Solving & OOP Assignment
 
-This repository contains solutions to 8 core TypeScript problems along with two technical blog posts. The code covers TypeScript fundamentals such as type narrowing, readonly tuples, generics, OOP classes, and asynchronous Promises using strict types.
+This repository contains solutions to 8 core TypeScript problems along with two technical blog posts. The code covers TypeScript fundamentals such as type narrowing, readonly tuples, generics, OOP classes, and asynchronous Promises.
 
 ## Project Structure
 
@@ -13,15 +13,16 @@ This repository contains solutions to 8 core TypeScript problems along with two 
 
 ## What's Inside
 
-All solutions are written in [`solutions.ts`](./solutions.ts) with strict types and zero use of `any`:
+All solutions are implemented in [`solutions.ts`](./solutions.ts):
 
-- **Basic Types & Functions**: Working with optional parameters and default fallbacks while handling numeric edge cases like `0`.
-- **Type Narrowing**: Handling union types (`string | number | boolean`) safely using `typeof` guards.
-- **Tuples & Immutability**: Formatting coordinate records with `readonly` tuples to prevent accidental array mutation.
-- **Generics**: Merging arbitrary arrays with rest parameters and safely plucking object keys using `keyof` constraints.
-- **Interfaces**: Structuring course models and filtering published items without mutating the source data.
-- **OOP Encapsulation**: Implementing `Employee` and `Manager` classes using `private` and `protected` access modifiers.
-- **Asynchronous TypeScript**: Creating typed `Promise<string>` flows with timed resolution and custom error rejection.
+- `multiplyValue`: Calculates multiplied values with default fallback, properly handling `0`.
+- `processInput`: Formats strings, numbers, or booleans using `typeof` type narrowing.
+- `formatCoordinate`: Returns a formatted location string using a `readonly` tuple to prevent mutation.
+- `concatenateArrays`: Combines multiple arrays into one using generics and rest parameters.
+- `getPopularCourses`: Filters published courses by minimum student count without mutating the original array.
+- `pluckValues`: Extracts specific property values from an array of objects using `keyof`.
+- `Employee` & `Manager`: Implements class inheritance and encapsulation with `protected` and `private` members.
+- `validateAgeAsync`: Async age validation returning a Promise that resolves after 1 second or rejects with an Error.
 
 ## Blog Posts
 
